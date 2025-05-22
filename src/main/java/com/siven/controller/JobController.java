@@ -51,7 +51,6 @@ public class JobController {
         return empList;
     }
 
-
     @GetMapping("/employees")
     public ResponseEntity<Map<String, Object>> getAllEmployees(Pageable pageable) {
         Page<Employee> page = repository.findAll(pageable);
